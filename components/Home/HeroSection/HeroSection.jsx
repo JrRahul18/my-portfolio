@@ -27,7 +27,7 @@ const HeroSection = () => {
         </div>
         <h3>Hi, myself</h3>
         <h1>RAHUL JEENA</h1>
-        <h2> I'm a <span className={styles.typewriter} style={{fontFamily: 'var(--font-family-2)'} } >{text}</span> <Cursor/> </h2>
+        <h2> I&apos;m a <span className={styles.typewriter} style={{fontFamily: 'var(--font-family-2)'} } >{text}</span> <Cursor/> </h2>
         <div className={styles.iconBox2}>
         <FaComputer className={styles.icons}/>
 

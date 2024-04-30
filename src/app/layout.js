@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js" async></script>
       </head>
       <body className={inter.className}>
         <Header className="headerCont" />
