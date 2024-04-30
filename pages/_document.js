@@ -5,7 +5,7 @@ class MyDocument extends Document{
         return(
             <Html>
                 <Head>
-                <script src="https://smtpjs.com/v3/smtp.js"></script>
+                <script src="https://smtpjs.com/v3/smtp.js" async></script>
                 </Head>
                 <body>
                     <Main/>
