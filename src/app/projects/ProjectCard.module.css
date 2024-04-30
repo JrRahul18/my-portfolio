@@ -1,0 +1,91 @@
+.projectCard{
+    border: 2px solid rgb(105, 105, 105);
+    width: 350px;
+    height: 450px;
+    margin: 50px 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    color: white;
+    .image{
+        filter: brightness(80%);
+        width: 100%;
+        height: 100%;
+        transition: 300ms ease-in-out;
+    }
+
+    .projectInfoBox{
+        border-top: 2px solid rgb(104, 103, 103);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        position: absolute;
+        bottom: 0;
+        background-color: rgba(44, 44, 44, 0.644);
+        backdrop-filter: blur(10px);
+        .projectName{
+            font-size: 25px;
+            font-weight: 500;
+            margin: 10px 8px;
+            margin-bottom: 8px;
+            
+        }
+        .descriptionBox{
+            height: 0;
+            /* border: 2px solid green; */
+            margin: 5px 8px;
+            overflow: hidden;
+            transition: all 300ms ease-in-out ;
+            .mainDescription{
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+            .pointData{
+                display: flex;
+                align-items: center;
+                /* border: 2px solid green; */
+                color: rgb(204, 204, 204);
+                margin: 5px 0;
+                .pointBullets{
+                    margin-right: 5px;
+                }
+                .point{
+                    font-size: 15px;
+                    color: rgb(219, 219, 93);
+                    
+                }
+            }
+        }
+    }
+    .projectInfoBox:hover{
+        .descriptionBox{
+            height: 200px;
+        }
+    }
+}
+.projectCard:hover{
+    .image{
+        filter: brightness(100%);
+    }
+}
+@media screen and (max-width: 600px) {
+    .projectCard{
+        width: 250px;
+        height: 300px;
+        margin: 0;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        
+        .projectInfoBox{
+            max-height: 70%;
+            .descriptionBox{
+                max-height: 100px;
+                overflow-y: auto;
+            }
+        }
+    }
+}

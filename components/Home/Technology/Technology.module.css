@@ -1,0 +1,158 @@
+.outerContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  /* border: 2px solid green; */
+  padding: 30px 0;
+  background: url("./images/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  .headingContainer {
+    width: 85%;
+    z-index: 1;
+    /* border: 2px solid gray; */
+    margin-bottom: 10px;
+    .heading {
+      font-size: 60px;
+      font-family: var(--font-family-1);
+      font-weight: 500;
+      background: -webkit-linear-gradient(
+        0deg,
+        #ffffff 30%,
+        #9b9ea0 50%,
+        rgb(255, 255, 255) 80%
+      );
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .subHeading {
+      font-size: 40px;
+      font-family: var(--font-family-2);
+      font-weight: 400;
+      background: -webkit-linear-gradient(
+        0deg,
+        #ffffff 30%,
+        #9b9ea0 50%,
+        rgb(255, 255, 255) 80%
+      );
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  .techContainer {
+    z-index: 1;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* border: 2px solid gray; */
+    .imageBox {
+      display: flex;
+      flex-direction: column;
+      /* border: 2px solid lightblue; */
+      align-items: center;
+      position: relative;
+      .logoContainer {
+        width: 140px;
+        height: 140px;
+        /* border: 2px solid green; */
+        margin: 10px 1.3vw;
+        padding: 30px;
+        border-radius: 50%;
+        /* margin-bottom: 25px; */
+        animation: rotateLogo 5s linear infinite forwards;
+        background-color: #2d2f308e;
+
+        .techLogo {
+          width: 100%;
+          height: auto;
+          object-fit: contain;
+          transition: all 300ms ease-in-out;
+          cursor: pointer;
+          filter: brightness(80%);
+          position: relative;
+        }
+        .techLogo:hover {
+          transform: scale(1.3);
+          filter: brightness(120%);
+        }
+      }
+      .tooltipBox{
+        background-color: rgba(43, 43, 43, 0.897);
+        position: absolute;
+        bottom: 20%;
+        padding: 5px 10px;
+        border-radius: 8px;
+        pointer-events: none;
+        transition: all 300ms ease-in-out;
+        .techName{
+          text-align: center;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+      }
+    }
+  }
+}
+.outerContainer::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  background-color: #29292971;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(2px) brightness(90%);
+}
+
+@keyframes rotateLogo {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .outerContainer{
+    .headingContainer{
+      width: 95%;
+      .heading{
+        font-size:45px;
+      }
+      .subHeading{
+        font-size: 30px;
+      }
+    }
+    .techContainer{
+      width: 90%;
+      justify-content: center;
+      .imageBox{
+        .logoContainer{
+          height: 90px;
+          width: 90px;
+          margin: 5px 0.5vw;
+          padding: 20px;
+          .techLogo:hover{
+            transform: scale(1.2);
+          }
+        }
+        .tooltipBox{
+          padding: 3px 8px;
+          bottom: 10%;
+          .techName{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  
+}

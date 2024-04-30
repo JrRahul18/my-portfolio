@@ -1,0 +1,209 @@
+.headerBox {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid gray; */
+  box-sizing: border-box;
+  align-items: center;
+  /* justify-content: center; */
+  /* position: relative; */
+  /* top: 20; */
+  /* bottom: 10; */
+  margin-top: 5vh;
+  padding: 2px 0;
+  z-index: 2;
+
+  .navBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    /* width: 80%; */
+    /* width: 80pc; */
+    padding: 1px 1.3vw;
+    border: 3px solid rgb(125, 131, 125);
+    border-radius: 50px;
+    box-sizing: border-box;
+    /* background-color: black; */
+    background-color: var(--header-background);
+
+    > .unorderedList {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      /* justify-content: space-between; */
+      /* border: 2px solid skyblue; */
+      /* box-sizing: border-box; */
+      height: 100%;
+      margin: 5px 4vw;
+
+      border-radius: 50px;
+      .listItem {
+        /* height: 100%; */
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* border: 2px solid rgb(0, 255, 106); */
+        margin: 5px 2vw;
+
+        > .link {
+          color: var(--text-color-2);
+          text-decoration: none;
+          font-size: 19px;
+          /* border: 2px solid yellow; */
+          /* display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center; */
+          text-align: center;
+          position: relative;
+          padding: 5px 0;
+          transition: color ease-in-out 200ms;
+        }
+        > .link:hover {
+          color: var(--text-color-1);
+        }
+
+        .link::after {
+          content: "";
+          position: absolute;
+          height: 3px;
+          background-color: white;
+          width: 0;
+          display: flex;
+          margin-top: 5px;
+          transition: all ease-in-out 200ms;
+        }
+        .link:hover::after {
+          width: 100%;
+        }
+      }
+      .listItem.active {
+        .link {
+          color: var(--text-color-1);
+        }
+        .link::after {
+          width: 100%;
+        }
+        .link.link:hover::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .hamburgerButton {
+    /* position: absolute;
+    left: 0;
+    top: 0; */
+    display: none;
+    cursor: pointer;
+  }
+  .hamburgerButton:active{
+    transform: rotate(360deg);
+    transition: ease-in 300ms;
+  }
+  .newNavBox {
+    /* position: fixed; */
+    left: 0;
+    top: 0;
+    width: 0;
+    display: none;
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 100vh;
+    transition: width 300ms ease-in-out;
+
+    .crossButton {
+      margin-top: 2vh;
+      margin-left: 2vw;
+      font-size: 40px;
+      cursor: pointer;
+      display: flex;
+    }
+    .crossButton:active{
+      transform: rotate(360deg);
+      transition: ease-in 300ms;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .headerBox {
+    position: fixed;
+    top: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .navBox {
+      display: none;
+    }
+    .hamburgerButton {
+      display: flex;
+      margin-top: 2vh;
+      margin-left: 2vw;
+      font-size: 30px;
+    }
+    .newNavBox {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      background-color: rgba(71, 65, 65, 0.767);
+      backdrop-filter: blur(10px);
+      .newUnorderedList {
+        width: 90%;
+        border: 2px solid green;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: auto;
+        margin: 0 auto;
+        margin-top: 30px;
+        overflow-x: hidden;
+
+        > .newListItem {
+          color: white;
+          border: 2px solid lightblue;
+          margin: 20px 0;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          box-sizing: border-box;
+          width: 150px;
+
+          > .newLink {
+            color: white;
+            text-decoration: none;
+            margin: 2px 0;
+            font-size: 20px;
+            border: 2px solid yellow;
+            text-align: center;
+            padding: 5px ;
+          }
+        }
+      }
+    }
+    .newNavBox.active {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      border-right: 2px solid white;
+
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .headerBox{
+    .newNavBox.active{
+      width: 100%;
+    }
+  }
+  
+}

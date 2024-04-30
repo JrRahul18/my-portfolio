@@ -1,0 +1,149 @@
+.outerContainer {
+  width: 90%;
+  /* border: 2px solid gray; */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  .headingContainer {
+    /* width: 80%; */
+    /* border: 2px solid green; */
+    margin-top: 20vh;
+
+    background-color: var(--container-border-color);
+    padding: 5px 20px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    .heading {
+      font-size: 60px;
+      font-family: var(--font-family-1);
+      font-weight: 700;
+      background: -webkit-linear-gradient(
+        0deg,
+        #ffffff 30%,
+        #9b9ea0 50%,
+        rgb(255, 255, 255) 80%
+      );
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+    }
+  }
+  .contactContainer {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid ghostwhite; */
+    border: 10px solid var(--container-border-color);
+    border-radius: 20px;
+    margin-bottom: 100px;
+    .formBox {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 3px solid rgb(126, 111, 111);
+      border-radius: 20px;
+      /* margin: 5px; */
+      margin: 50px 0;
+      padding: 30px 2vw;
+      background-color: rgba(44, 43, 43, 0.719);
+      animation: glow 1s infinite alternate;
+
+      .nameBox,
+      .emailBox,
+      .messageBox {
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid greenyellow; */
+        margin: 25px 0;
+        width: 100%;
+
+        .nameLabel,
+        .emailLabel,
+        .messageLabel {
+          font-size: 20px;
+          margin-bottom: 10px;
+          color: var(--text-color-2);
+          font-weight: 500;
+        }
+        .nameInput,
+        .emailInput,
+        .messageInput {
+          font-size: 18px;
+          padding: 8px 10px;
+          width: 100%;
+          background-color: transparent;
+          outline: none;
+          border: none;
+          border-bottom: 2px solid var(--text-color-2);
+          margin-bottom: 5px;
+          color: var(--text-color-1);
+          resize: none;
+        }
+
+        .nameInput:-webkit-autofill,
+        .emailInput:-webkit-autofill {
+          -webkit-box-shadow: 0 0 0 1000px rgb(44, 43, 43) inset !important;
+          -webkit-text-fill-color: white !important;
+        }
+
+        .errorBox {
+          font-size: 16px;
+          color: rgb(255, 96, 96);
+          font-weight: 600;
+        }
+      }
+
+      .buttonBox {
+        width: 100%;
+        /* border: 2px solid gray; */
+        text-align: center;
+        .myBtn {
+          font-size: 18px;
+          padding: 15px 20px;
+          border-radius: 30px;
+          border: none;
+          background-color: var(--header-background);
+          color: var(--text-color-1);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@keyframes glow {
+    from {
+      /* box-shadow: 0 0 5px #6e6e6e, 0 0 5px #6e6e6e, 0 0 10px #6e6e6e; */
+      box-shadow: 0 0 10px 5px rgb(85, 85, 85);
+    }
+    to {
+      /* box-shadow: 0 0 15px #6e6e6e, 0 0 15px #6e6e6e, 0 0 25px #6e6e6e; */
+      box-shadow: 0 0 30px 5px gray;
+
+    }
+  }
+  
+@media screen and (max-width: 800px) {
+  .outerContainer {
+    .contactContainer {
+      .formBox {
+        width: 100%;
+        margin: 0;
+        padding: 30px 0;
+        .nameBox,
+        .emailBox,
+        .messageBox {
+          width: 90%;
+        }
+        .buttonBox {
+          width: 90%;
+        }
+      }
+    }
+  }
+}
