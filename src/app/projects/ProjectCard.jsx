@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const ProjectCard = ({ project }) => {
   return (
-    <Link href={"/"} className={styles.projectCard}>
+    <Link href={project.link} target="_blank" className={styles.projectCard}>
       <Image src={project.img} className={styles.image} alt={project.name}/>
       <div className={styles.projectInfoBox}>
         <p className={styles.projectName}>{project.name}</p>

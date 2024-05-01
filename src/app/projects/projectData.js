@@ -11,6 +11,7 @@ const projectDataArray = [
       "Another users can also like the post and can comment on the post",
     ],
     img: img1,
+    link: "https://github.com/JrRahul18/user-registration-validation-nodejs"
   },
   {
     name: "TradeGen",
@@ -21,7 +22,8 @@ const projectDataArray = [
       "Used react hooks for responsive rendering of data",
       "Also explored various third party libraries and APIs to fetch data",
     ],
-    img: img2
+    img: img2,
+    link: "https://github.com/JrRahul18/tradegen-website"
   },
   {
     name: "SwiftCart",
@@ -31,7 +33,8 @@ const projectDataArray = [
       "Admin can upload and sell the products and users can buy it",
       "Developed all functionalities like cart, order, user authentication and others",
     ],
-    img:img3
+    img:img3,
+    link: "/"
   },
 ];
 
