@@ -34,7 +34,7 @@ const Contact = () => {
                         Have a good day!`;
 
       const mailTemplate = {
-        SecureToken: "6aaf20fd-a55d-486b-aa67-cafe25701de5",
+        SecureToken: '6aaf20fd-a55d-486b-aa67-cafe25701de5',
         To: "rahuljeenaworkspace@gmail.com",
         From: "rahuljeenaworkspace@gmail.com",
         Subject: `New message from ${formState.user_email}`,

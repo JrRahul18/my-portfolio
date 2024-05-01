@@ -158,7 +158,7 @@
       backdrop-filter: blur(10px);
       .newUnorderedList {
         width: 90%;
-        border: 2px solid green;
+        /* border: 2px solid green; */
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
@@ -170,7 +170,7 @@
 
         > .newListItem {
           color: white;
-          border: 2px solid lightblue;
+          /* border: 2px solid lightblue; */
           margin: 20px 0;
           display: flex;
           flex-direction: row;
@@ -183,7 +183,7 @@
             text-decoration: none;
             margin: 2px 0;
             font-size: 20px;
-            border: 2px solid yellow;
+            /* border: 2px solid yellow; */
             text-align: center;
             padding: 5px ;
           }
@@ -194,7 +194,7 @@
       width: 50%;
       display: flex;
       flex-direction: column;
-      border-right: 2px solid white;
+      border-right: 2px solid rgb(124, 124, 124);
 
     }
   }

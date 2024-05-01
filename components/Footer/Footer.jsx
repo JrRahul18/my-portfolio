@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import styles from "./Footer.module.css"
 import Link from 'next/link'
@@ -24,7 +25,7 @@ const Footer = () => {
         </div>
         <hr className={styles.hr}/>
         <div className={styles.box2}>
-            <p className={styles.copyright}>&copy; 2023 Rahul Jeena,  All Rights Reserved.</p>
+            <p className={styles.copyright}>&copy; 2023 Rahul Jeena.  All Rights Reserved.</p>
         </div>
     </div>
   )
