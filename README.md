@@ -26,16 +26,13 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ![Screenshot (27)](https://github.com/JrRahul18/my-portfolio/assets/151987448/222a6350-860b-4be8-940e-229e52a70b78)
 
+![Screenshot (28)](https://github.com/JrRahul18/my-portfolio/assets/151987448/4e7fd1ab-ed23-461e-a4f3-15aaa26ed9a2)
 
-To learn more about Next.js, take a look at the following resources:
+![Screenshot (29)](https://github.com/JrRahul18/my-portfolio/assets/151987448/d04f152f-069b-4efb-9516-93cb1955aff2)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Screenshot (30)](https://github.com/JrRahul18/my-portfolio/assets/151987448/908511f1-b4de-47ad-8b00-67d11d85fe0c)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+![Screenshot (31)](https://github.com/JrRahul18/my-portfolio/assets/151987448/647e1025-6eb5-4c53-bd8b-7f60fac9bed7)
 
-## Deploy on Vercel
+![Screenshot (32)](https://github.com/JrRahul18/my-portfolio/assets/151987448/01d13b3d-98c5-4cbc-817f-38643109c52b)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
