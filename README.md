@@ -22,6 +22,11 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## Learn More
 
+## Screenshot
+
+![Screenshot (27)](https://github.com/JrRahul18/my-portfolio/assets/151987448/222a6350-860b-4be8-940e-229e52a70b78)
+
+
 To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
