@@ -25,7 +25,6 @@
 }
 ::-webkit-scrollbar-thumb:hover{
   background-color: rgb(177, 177, 177);
-  /* background-color: rgb(53, 47, 105); */
 }
 
 * {
@@ -40,7 +39,6 @@
 body {
   background-color: var(--background-1);
   color: white;
-  /* position: relative; */
   scroll-behavior: smooth;
 }
 .headerCont{
