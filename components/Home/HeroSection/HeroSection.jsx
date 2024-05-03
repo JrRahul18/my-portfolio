@@ -33,7 +33,7 @@ const HeroSection = () => {
 
         </div>
         <div className={styles.buttonContainer}>
-          <Link target="_blank" href="./Rahul_Resume.pdf" className={styles.link1}>
+          <Link target="_blank" href="./My_Resume.pdf" className={styles.link1}>
             <FiDownload className={styles.buttonIcons}/>
             <span>Download CV</span>
             </Link>
