@@ -14,16 +14,16 @@ const Contact = () => {
 
   const inputChangeHandler = (event) => {
     setFormState({ ...formState, [event.target.name]: event.target.value });
-    console.log(formState);
+    // console.log(formState);
   };
 
   const formSubmitHandler = (event) => {
     event.preventDefault();
     let getFormErrors = formValidation();
     setFormErrors(getFormErrors);
-    console.log("Form Errors: ", getFormErrors);
-    console.log("Form State: ", formState);
-    console.log("FOrmRef.current: ", formRef.current);
+    // console.log("Form Errors: ", getFormErrors);
+    // console.log("Form State: ", formState);
+    // console.log("FOrmRef.current: ", formRef.current);
     if (Object.keys(getFormErrors).length === 0) {
       const mailBody = `<h2>Message Recieved from ${formState.user_email}</h2>
                         <br>
@@ -34,8 +34,8 @@ const Contact = () => {
                         Have a good day!`;
 
       const mailTemplate = {
-        SecureToken: '6aaf20fd-a55d-486b-aa67-cafe25701de5',
-        To: "rahuljeenaworkspace@gmail.com",
+        SecureToken: 'a6799529-8fd9-46b8-893f-f87008567ceb',
+        To: "rahuljeena16@gmail.com",
         From: "rahuljeenaworkspace@gmail.com",
         Subject: `New message from ${formState.user_email}`,
         Body: mailBody,
