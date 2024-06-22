@@ -9,9 +9,6 @@ import Head from "next/head";
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>My Portfolio</title>
-      </Head>
       <div className={styles.appContainer}>
         <HeroSection />
         <AboutMeData/>

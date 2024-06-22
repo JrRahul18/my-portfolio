@@ -2,7 +2,7 @@
 import React from "react";
 import styles from "./HeroSection.module.css";
 import Image from "next/image";
-import ProfileImage from "./ProfileImage2.jpg";
+import ProfileImage from "./ProfileImage.jpg";
 import { FaComputer } from "react-icons/fa6";
 import { SiHey } from "react-icons/si";
 import { FiDownload } from "react-icons/fi";
