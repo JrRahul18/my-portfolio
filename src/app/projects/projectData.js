@@ -7,8 +7,8 @@ const projectDataArray = [
     mainDescription: "Built sample backend routes for a social media app",
     description: [
       "Secure registration and login/logout of user",
-      "User can upload a post",
-      "Another users can also like the post and can comment on the post",
+      "User can create/upload a post(can be Image or Video)",
+      "User can Like and Comment on posts of other accounts",
     ],
     img: img1,
     link: "https://github.com/JrRahul18/user-registration-validation-nodejs"
@@ -26,15 +26,15 @@ const projectDataArray = [
     link: "https://github.com/JrRahul18/tradegen-website"
   },
   {
-    name: "SwiftCart",
-    mainDescription: "Ecommerce Website for buying and selling products",
+    name: "SwiftCart Hub",
+    mainDescription: "FullStack Ecommerce Website for buying and selling products",
     description: [
-      "Deeloped both backend and frontend for the website",
-      "Admin can upload and sell the products and users can buy it",
-      "Developed all functionalities like cart, order, user authentication and others",
+      "Browse a wide range of productswith category filtering ( ex. price, search keywords, product category and ratings)",
+      "Developed all functionalities like Cart, Order, User Authentication",
+      "Admin dashboard for product, order, and user management",
     ],
     img:img3,
-    link: "/"
+    link: "https://github.com/JrRahul18/SwiftCart-Hub"
   },
 ];
 
