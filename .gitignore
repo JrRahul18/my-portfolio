@@ -44,4 +44,6 @@ public/_next-video
 
 
 # contactus
-src/app/contact-me
+# src/app/contact-me
+
+# if want contact-me folder in github, type   "git add src/app/contact-me"
