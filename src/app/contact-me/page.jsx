@@ -8,7 +8,6 @@ const Contact = () => {
     user_email: "",
     user_message: "",
   };
-  console.log("TOken value: ", process.env.NEXT_PUBLIC_SECURE_TOKEN)
   const formRef = useRef();
   const [formState, setFormState] = useState(initialInputValue);
   const [formErrors, setFormErrors] = useState({});
