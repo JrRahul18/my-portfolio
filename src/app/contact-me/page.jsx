@@ -35,8 +35,8 @@ const Contact = () => {
 
       const mailTemplate = {
         SecureToken: process.env.NEXT_PUBLIC_SECURE_TOKEN,
-        To: "rahuljeena16@gmail.com",
-        From:"rahuljeenaworkspace@gmail.com",
+        To: process.env.NEXT_PUBLIC_TO_EMAIL,
+        From: process.env.NEXT_PUBLIC_FROM_EMAIL,
         Subject: `New message from ${formState.user_email}`,
         Body: mailBody,
       };
